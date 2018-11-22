@@ -6,7 +6,8 @@
  */
 class Person {
 	constructor(name, age) {
-		// your code goes here!
+		this.name = name;
+		this.age = age
 	}
 }
 
@@ -20,7 +21,9 @@ class Person {
  */
 class Instructor extends Person {
 	constructor(name, age, speakingVolume) {
-		// your code goes here!
+		this.name = name
+		typeof this.age = Number
+		typeof this.speakingVolume = Number
 	}
 
 	/**
@@ -28,7 +31,11 @@ class Instructor extends Person {
 	 * The log should be in ALL CAPS with a bunch of excalamtion marks (!) at the end if this instructor's speakingVolume is greater than 75.
 	 */
 	introduceSelf() {
-		// your code goes here!
+		if (speaking Volume<=75) {
+		console.log(`Hello, My name is ${name.Instructor}.`)
+		} else {
+			console.log (`HELLO, MY NAME IS ${name.Instructor}!!!!!!!!!!!!!!!!!!!`)
+		}
 	}
 }
 
@@ -40,13 +47,15 @@ class Instructor extends Person {
  */
 class Student extends Person {
 	constructor(name, age, subjects) {
-		// your code goes here!
+		const Person = new Person(name, age, [subjects]) {
+		}
 	}
+}
 
 	// This method should add a subject to this student's array of subjects.
 	// What if the subject already exists in this student's array of subjects?
 	addSubject(subject) {
-		// your code goes here!
+		this.subject = subject.push(subject)
 	}
 
 	// This method should remove a subject from this student's array of subjects.
@@ -69,7 +78,14 @@ class Student extends Person {
  */
 class Classroom {
 	constructor(instructor, capacity, subject) {
-		// your code goes here!
+		this.instructor = instructor
+		this.capacity = capacity
+		this.subject = subject
+	}
+	if (capacity === 0) {
+		this.capacity = 0
+	} else {
+		this.capacity = capacity
 	}
 
 	/**
@@ -77,12 +93,16 @@ class Classroom {
 	 * and returns false if this classroom is not at its capacity.
 	 */
 	get classFull() {
-		// your code goes here!
+		if Classroom >= this.capacity {
+			return true 
+		} else {
+			return false
+		}
 	}
 
 	// This method should add a student to this classroom
 	addStudent(student) {
-		// your code goes here!
+	this.student.push(student)
 	}
 
 	// This method should remove a student from this classroom
@@ -92,9 +112,9 @@ class Classroom {
 
 	// This method should change this classroom's instructor.
 	changeInstructor(instructor) {
-		// your code goes here!
+	this.instructor = instructor	
 	}
-}
+
 
 /**************************************************
 The following code runs the functions defined above
